@@ -1,0 +1,15 @@
+{
+  "name": "federation-example",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "wsrun --parallel start",
+    "build": "yarn workspaces run build",
+    "dev": "wsrun --parallel dev"
+  },
+  "devDependencies": {
+    "wsrun": "^5.2.0"
+  }
+}

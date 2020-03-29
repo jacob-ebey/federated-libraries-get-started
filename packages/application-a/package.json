@@ -1,0 +1,24 @@
+{
+  "name": "application-a",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "serve dist -p 3001",
+    "build": "webpack --mode production",
+    "dev": "concurrently \"webpack --watch\" \"serve dist -p 3001\""
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.1.0",
+    "html-webpack-plugin": "git://github.com/ScriptedAlchemy/html-webpack-plugin#master",
+    "serve": "^11.3.0",
+    "webpack": "git://github.com/webpack/webpack.git#dev-1",
+    "webpack-cli": "^3.3.11"
+  }
+}
